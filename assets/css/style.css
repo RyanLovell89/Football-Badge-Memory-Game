@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@700&display=swap');
+
+/* ---------------------- background image */
+
+body {
+    background: url("../images/football-pitch.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* ------------------------Headings */
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    margin: 15px 0 15px 0;
+}
+
+/* ------------------- Description box */
+
+.description-box {
+    border: solid black 2px;
+    margin: 0 5px 0 5px;
+    background-color: rgba(241, 241, 241, 0.5);
+}
+
+.game-description {
+    text-align: center;
+}
+
+.rules {
+    text-align: center;
+    list-style-position: inside;
+}
