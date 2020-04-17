@@ -36,13 +36,45 @@ h2{
     border: solid black 2px;
     margin: 0 5px 0 5px;
     background-color: rgba(241, 241, 241, 0.5);
+    width: auto;
 }
 
 .game-description {
     text-align: center;
 }
 
-.rules {
+.how-to {
     text-align: center;
     list-style-position: inside;
 }
+
+/* ------------------ Player Info / Start Button / Timer */
+
+.player-info {
+    border: solid black 2px;
+    margin: 5px;
+    background-color: rgba(241, 241, 241, 0.5);
+    width: auto;
+}
+
+/* ------------------- Game background */
+
+.game-background {
+    border: solid black 2px;
+    margin: 5px;
+    background-color: rgba(241, 241, 241, 0.5);
+    height: 540px;
+    width: auto;
+    padding: 10px;
+}
+
+/* ----------------------- Footer */
+
+/* footer {
+  color: rgb(209, 205, 205);
+  width: 100%;
+  left: 0;
+  clear: both;
+  position: relative;
+  margin-top: 15px;
+} */
