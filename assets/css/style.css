@@ -57,9 +57,31 @@ h2{
     width: auto;
 }
 
+form label {
+    font-weight: bold;
+}
+
+input {
+    height: 20px;
+    width: 10%;
+    margin: 10px 0 5px 0;
+    border: solid black 1px;
+}
+
+button {
+    width: 5%;
+    margin-left: 5px;
+}
+
+.timer {
+    float: right;
+    font-weight: bold;
+    margin: 0 0 8px 150px;
+}
+
 /* ------------------- Game background */
 
-.game-background {
+#game-background {
     border: solid black 2px;
     margin: 5px;
     background-color: rgba(241, 241, 241, 0.5);

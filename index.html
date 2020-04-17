@@ -37,11 +37,11 @@
 
     <!-- Game Description -->
 
-    <div class="description-box">
+    <div class="container-fluid description-box">
       <h2>Game Description</h2>
       <p class="game-description">
-        This is a simple memory game. The aim of the game is match all the
-        cards. Match the cards the quickest and earn yourself top spot on the
+        This is a simple memory game. The aim of the game is to match all the
+        badges. Match the badges the quickest and earn yourself top spot on the
         leaderboard. The person with the quickest time will WIN... nothing it
         just for fun!
       </p>
@@ -49,21 +49,23 @@
       <h2>How To Play</h2>
       <ol class="how-to">
         <li>Enter your name and click start and the timer will begin.</li>
-        <li>Match up all the cards.</li>
-        <li>When you match the last cards the timer will stop.</li>
+        <li>Match up all the bagdes.</li>
+        <li>When you match the last pair badges the timer will stop.</li>
       </ol>
     </div>
 
     <div class="container-fluid player-info">
-        <form>
-            <label for="pname">Player Name:</label>
-            <input type="text" id="pname" name="pname" required>
-        </form>
+      <form>
+        <label for="pname">Player Name:</label>
+        <input type="text" id="pname" name="pname" required />
+        <button type="submit" value="Submit">Start!</button>
+        <p class="timer">Timer</p>
+      </form>
     </div>
 
     <!-- Game Board -->
 
-    <div class="game-background"></div>
+    <div id="game-background"></div>
 
     <!-- Footer -->
 
@@ -71,6 +73,4 @@
         <p>Copyright Dunn 2020</p>
     </footer> -->
   </body>
-
-
 </html>
