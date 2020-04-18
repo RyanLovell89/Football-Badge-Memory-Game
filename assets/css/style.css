@@ -90,6 +90,18 @@ button {
     padding: 10px;
 }
 
+/* ------------------------ Game badges before turned */
+
+div#game-background > div {
+    background: url("../images/Premier-League-Logo1.jpg") no-repeat;
+    border: solid black 1px;
+    width: 71px;
+    height: 71px;
+    float: left;
+    margin: 10px;
+    cursor: pointer;
+}
+
 /* ----------------------- Footer */
 
 /* footer {
