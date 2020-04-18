@@ -55,9 +55,7 @@ h2{
     margin: 5px;
     background-color: rgba(241, 241, 241, 0.5);
     width: auto;
-}
-
-form label {
+    text-align: center;
     font-weight: bold;
 }
 
@@ -73,33 +71,16 @@ button {
     margin-left: 5px;
 }
 
-.timer {
-    float: right;
-    font-weight: bold;
-    margin: 0 0 8px 150px;
-}
 
 /* ------------------- Game background */
 
-#game-background {
+#game-board {
     border: solid black 2px;
     margin: 5px;
     background-color: rgba(241, 241, 241, 0.5);
     height: 540px;
     width: auto;
     padding: 10px;
-}
-
-/* ------------------------ Game badges before turned */
-
-div#game-background > div {
-    background: url("../images/Premier-League-Logo1.jpg") no-repeat;
-    border: solid black 1px;
-    width: 71px;
-    height: 71px;
-    float: left;
-    margin: 10px;
-    cursor: pointer;
 }
 
 /* ----------------------- Footer */
