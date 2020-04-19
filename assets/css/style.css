@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@700&display=swap');
 
+
 /* ---------------------- background image */
 
 body {
     background: url("../images/football-pitch.jpg") no-repeat center center fixed;
     background-size: cover;
     height: 100%;
-    overflow: hidden;
 }
 
 /* ------------------------Headings */
@@ -71,6 +71,9 @@ button {
     margin-left: 5px;
 }
 
+.time {
+    margin-bottom: 5px;
+}
 
 /* ------------------- Game background */
 
@@ -81,6 +84,16 @@ button {
     height: 540px;
     width: auto;
     padding: 10px;
+}
+
+div#game-board > div {
+    background: url("../../assets/images/Premier-League-Logo1.jpg") center no-repeat;
+    border: solid black 1px;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 10px;
+    padding: 20px;
 }
 
 /* ----------------------- Footer */
