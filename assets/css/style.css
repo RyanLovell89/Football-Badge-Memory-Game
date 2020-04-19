@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@700&display=swap');
 
-
 /* ---------------------- background image */
 
 body {
@@ -67,7 +66,7 @@ input {
 }
 
 button {
-    width: 5%;
+    width: 8%;
     margin-left: 5px;
 }
 
@@ -89,8 +88,8 @@ button {
 div#game-board > div {
     background: url("../../assets/images/Premier-League-Logo1.jpg") center no-repeat;
     border: solid black 1px;
-    width: 100px;
-    height: 100px;
+    width: 71px;
+    height: 71px;
     float: left;
     margin: 10px;
     padding: 20px;
