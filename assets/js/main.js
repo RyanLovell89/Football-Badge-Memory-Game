@@ -1,6 +1,6 @@
 //Variables
 
-let badges = [
+var badges = [
   {
     name: "AFC-Bournemouth",
     img: "../../assets/images/AFC-Bournemouth1.jpg",
@@ -162,30 +162,4 @@ let badges = [
     img: "../../assets/images/Wolverhampton-Wanderers-FC1.jpg",
   },
 ];
-let values = [];
-let badgesids = [];
-let badgesflipped = 0;
 
-// Shuffle 
-
-Array.prototype.badgeshuffle = function() {
-    let i = this.length, j, temp;
-    while(--i > 0) {
-        j = Math.floor(Math.random() * (i + 1));
-        temp = this[j];
-        this[j] = this[i];
-        this[i] = temp;
-    }
-}
-
-//Generates a new game
-
-function newGame() {
-    badgesflipped = 0;
-    let output = '';
-    badges.badgeshuffle();
-    for(let i = 0; i < badges.length; i ++) {
-        output += '<div id="badge_'+i+'" onclick="flipbadge(this,\''+badges[i]+'\"></div>'
-    }
-    document.getElementById('game-board').innerHTML = output;
-}
