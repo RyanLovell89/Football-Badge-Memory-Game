@@ -13,7 +13,6 @@ html {
 body {
     background: url("../images/football-pitch.jpg") no-repeat center center fixed;
     background-size: cover;
-    height: 100%;
 }
 
 /* ------------------------Headings */
@@ -82,27 +81,62 @@ button {
     margin-bottom: 5px;
 }
 
-/* ------------------- Game background */
+/* ------------------- Game  */
 
-#game-board {
-    border: solid black 2px;
-    margin: 5px;
-    background-color: rgba(241, 241, 241, 0.5);
-    height: 400px;
-    width: auto;
-    padding: 10px;
+.grid {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-div#game-board > div {
-    background: url("../../assets/images/Premier-League-Logo1.jpg") center no-repeat;
-    border: solid black 1px;
-    width: 71px;
+.badge {
+  position: relative;
+  transition: all 0.4s linear;
+  transform-style: preserve-3d;
+  margin: 5px;
+}
+
+.badge,
+.back,
+.front {
     height: 71px;
-    display: block;
-    float: left;
-    margin: 10px;
-    padding: 20px;
-    cursor: pointer;
+    width: 71px;
+}
+
+.front {
+    background: url('../../assets/images/Premier-League-Logo1.jpg') no-repeat center center / contain;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.selected {
+    transform: rotateY(180deg);
+}
+
+.match .front {
+    background: black !important;
+}
+
+.back,
+.front {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.selected {
+    border: solid 1.5px yellow;
+}
+
+.match {
+    border: solid 1.5px red;
+    background-image: none !important;
 }
 
 /* ----------------------- Footer */
