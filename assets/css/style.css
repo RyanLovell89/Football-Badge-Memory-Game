@@ -13,6 +13,7 @@ html {
 body {
     background: url("../images/football-pitch.jpg") no-repeat center center fixed;
     background-size: cover;
+    margin: 0;
 }
 
 /* ------------------------Headings */
@@ -23,7 +24,7 @@ h1 {
     color: black;
     font-family: 'Roboto', sans-serif;
     font-size: 45px;
-    margin-top: 5px;
+    margin: 0 0 5px 0;
     font-weight: 700;
 }
 
@@ -38,25 +39,25 @@ h2{
 
 /* ------------------- Description box */
 
-.description-box {
+.descriptionBox {
     border: solid black 2px;
     margin: 0 5px 0 5px;
     background-color: rgba(241, 241, 241, 0.5);
     width: auto;
 }
 
-.game-description {
+.gameDescription {
     text-align: center;
 }
 
-.how-to {
+.howTo {
     text-align: center;
     list-style-position: inside;
 }
 
 /* ------------------ Player Info / Start Button / Timer */
 
-.player-info {
+.playerInfo {
     border: solid black 2px;
     margin: 5px;
     background-color: rgba(241, 241, 241, 0.5);
@@ -78,13 +79,23 @@ button {
 }
 
 .time {
-    margin-bottom: 5px;
+    margin: 0 0 5px 0;
 }
 
-/* ------------------- Game  */
+/* ------------------------- Game Background */
+
+.gameBackground {
+    border: solid black 2px;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgba(241, 241, 241, 0.5);
+    width: auto;
+}
+
+/* ------------------------- Game  */
 
 .grid {
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -96,13 +107,14 @@ button {
   transition: all 0.4s linear;
   transform-style: preserve-3d;
   margin: 5px;
+  cursor: pointer;
 }
 
 .badge,
 .back,
 .front {
-    height: 71px;
-    width: 71px;
+    height: 100px;
+    width: 100px;
 }
 
 .front {
@@ -121,7 +133,7 @@ button {
 }
 
 .match .front {
-    background: black !important;
+    background: transparent !important;
 }
 
 .back,
@@ -131,21 +143,9 @@ button {
 }
 
 .selected {
-    border: solid 1.5px yellow;
+    border: solid 1.5px black;
 }
 
 .match {
-    border: solid 1.5px red;
     background-image: none !important;
 }
-
-/* ----------------------- Footer */
-
-/* footer {
-  color: rgb(209, 205, 205);
-  width: 100%;
-  left: 0;
-  clear: both;
-  position: relative;
-  margin-top: 15px;
-} */
