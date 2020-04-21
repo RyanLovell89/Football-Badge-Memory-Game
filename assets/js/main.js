@@ -163,3 +163,17 @@ const resetGuesses = () => {
         badge.classList.remove('selected')
     })
 }
+
+let myTimer;
+   function clock() {
+     myTimer = setInterval(myClock, 1000);
+     let c = 0;
+
+     function myClock() {
+       document.getElementById("timer").innerHTML = ++c;
+       if (c == 0) {
+         clearInterval(myTimer);
+         alert("Time's Up!");
+       }
+     }
+   }
