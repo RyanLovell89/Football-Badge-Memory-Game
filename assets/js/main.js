@@ -171,7 +171,7 @@ let myTimer;
 
      function myClock() {
        document.getElementById("timer").innerHTML = ++c;
-       if (c == 0) {
+       if (c == 200) {
          clearInterval(myTimer);
          alert("Time's Up!");
        }

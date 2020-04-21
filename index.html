@@ -19,6 +19,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
     <title>Football Badge Memory Game</title>
@@ -34,33 +35,39 @@
     <div class="descriptionBox">
       <h2>Game Description</h2>
       <p class="gameDescription">
-        This is a simple memory game. The aim of the game is to match all the
-        badges. Match the badges the quickest and earn yourself top spot on the
-        leaderboard. The person with the quickest time will WIN... nothing it
-        just for fun!
+        This is a memory game. The aim is to match all the Premier League
+        Club badges. Match the club badges the quickest and earn yourself top spot on
+        the leaderboard. The person with the quickest time will WIN... nothing
+        it just for fun!
       </p>
+    
+    <!-- How to Play -->
 
       <h2>How To Play</h2>
       <ol class="howTo">
-        <li>Enter your name and click start and the timer will begin.</li>
-        <li>Match up all the bagdes.</li>
-        <li>When you match the last pair badges the timer will stop.</li>
+        <li>Enter your name, click start and the timer will begin.</li>
+        <li>Click each Premier League Logo to reveal a clubs badge.</li>
+        <li>Match the club badges up together.</li>
+        <li>When you've matched the last club badges together the timer will stop.</li>
       </ol>
     </div>
 
+    <!-- Player Name and Timer -->
+
     <div class="playerInfo">
-        <label for="pname">Player Name:</label>
-        <input type="text" id="pname" name="pname"/>
-        <button onclick="clock(); document.getElementById('timer').innerHTML='0';">Start!</button>
-        <p class="time">Timer <span id="timer">0</span> seconds</p>
+      <label for="pname">Player Name:</label>
+      <input type="text" id="pname" name="pname" />
+      <button onclick="clock(); document.getElementById('timer').innerHTML='0';">
+        Start!
+      </button>
+      <p class="time">Timer: <span id="timer">0</span> seconds</p>
     </div>
 
     <!-- Game Board -->
     <div class="gameBackground">
-    <div id="game"></div>
+      <div id="game"></div>
     </div>
 
-    
     <script src="assets/js/main.js"></script>
     <script src="assets/js/jquery-3.4.1.js"></script>
   </body>

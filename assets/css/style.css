@@ -44,15 +44,18 @@ h2{
     margin: 0 5px 0 5px;
     background-color: rgba(241, 241, 241, 0.5);
     width: auto;
+    font-family: 'Lato', sans-serif;
 }
 
 .gameDescription {
     text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 
 .howTo {
     text-align: center;
     list-style-position: inside;
+    font-family: 'Lato', sans-serif;
 }
 
 /* ------------------ Player Info / Start Button / Timer */
@@ -64,6 +67,7 @@ h2{
     width: auto;
     text-align: center;
     font-weight: bold;
+    font-family: 'Lato', sans-serif;
 }
 
 input {
@@ -80,6 +84,7 @@ button {
 
 .time {
     margin: 0 0 5px 0;
+    font-family: 'Lato', sans-serif;
 }
 
 /* ------------------------- Game Background */
