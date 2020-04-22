@@ -85,97 +85,106 @@ const badgeArray = [
 
 let gameGrid = badgeArray.concat(badgeArray);
 let count = 0;
-let firstGuess = '';
-let secondGuess = '';
+let firstGuess = "";
+let secondGuess = "";
 let sameBadge = null;
 let badgeDelay = 1000;
 
 gameGrid.sort(() => 0.5 - Math.random());
 
-const game = document.getElementById('game');
-const grid = document.createElement('section');
-grid.setAttribute('class', 'grid');
+const game = document.getElementById("game");
+const grid = document.createElement("section");
+grid.setAttribute("class", "grid");
 game.appendChild(grid);
 
+gameGrid.forEach((item) => {
+  const badge = document.createElement("div");
+  badge.classList.add("badge");
+  badge.dataset.name = item.name;
 
-gameGrid.forEach(item => {
-    const badge = document.createElement('div');
-    badge.classList.add('badge');
-    badge.dataset.name = item.name
+  const front = document.createElement("div");
+  front.classList.add("front");
 
-    const front = document.createElement('div')
-    front.classList.add('front')
+  const back = document.createElement("div");
+  back.classList.add("back");
+  badge.style.backgroundImage = `url(${item.img})`;
 
-    const back = document.createElement('div')
-    back.classList.add('back')
-    badge.style.backgroundImage = `url(${item.img})`;
-    
-    grid.appendChild(badge)
-    badge.appendChild(front)
-    badge.appendChild(back)
-})
+  grid.appendChild(badge);
+  badge.appendChild(front);
+  badge.appendChild(back);
+});
 
-grid.addEventListener('click', function(event) {
-    let clicked = event.target;
+grid.addEventListener("click", function (event) {
+  let clicked = event.target;
 
-    if (clicked.nodeName === 'SECTION' || clicked === sameBadge){
-        return
+  if (clicked.nodeName === "SECTION" || clicked === sameBadge) {
+    return;
+  }
+  if (count < 2) {
+    count++;
+    if (count === 1) {
+      firstGuess = clicked.parentNode.dataset.name;
+      console.log(firstGuess);
+      clicked.parentNode.classList.add("selected");
+    } else {
+      secondGuess = clicked.parentNode.dataset.name;
+      console.log(secondGuess);
+      clicked.parentNode.classList.add("selected");
     }
-    if (count < 2) {
-        count++
-        if (count === 1) {
-            firstGuess = clicked.parentNode.dataset.name
-            console.log(firstGuess)
-            clicked.parentNode.classList.add('selected')
-        }
-        else {
-            secondGuess = clicked.parentNode.dataset.name
-            console.log(secondGuess)
-            clicked.parentNode.classList.add('selected')
-        }
-        if (firstGuess !== '' && secondGuess !== '') {
-            if (firstGuess === secondGuess) {
-                setTimeout(match, badgeDelay)
-                setTimeout(resetGuesses, badgeDelay)
-            }
-            else {
-                setTimeout(resetGuesses, badgeDelay)
-            }
-        }
-        sameBadge = clicked;
+    if (firstGuess !== "" && secondGuess !== "") {
+      if (firstGuess === secondGuess) {
+        setTimeout(match, badgeDelay);
+        setTimeout(resetGuesses, badgeDelay);
+        tempAlert("That's A Match!", 1000);
+      } else {
+        setTimeout(resetGuesses, badgeDelay);
+      }
     }
-})
+    sameBadge = clicked;
+  }
+});
 
 const match = () => {
-    let selected = document.querySelectorAll('.selected')
-    selected.forEach(badge => {
-        badge.classList.add('match')
-    })
-}
+  let selected = document.querySelectorAll(".selected");
+  selected.forEach((badge) => {
+    badge.classList.add("match");
+  });
+};
 
 const resetGuesses = () => {
-    firstGuess = ''
-    secondGuess = ''
-    count = 0
+  firstGuess = "";
+  secondGuess = "";
+  count = 0;
 
-    let selected = document.querySelectorAll('.selected')
-    selected.forEach(badge => {
-        badge.classList.remove('selected')
-    })
-}
+  let selected = document.querySelectorAll(".selected");
+  selected.forEach((badge) => {
+    badge.classList.remove("selected");
+  });
+};
 
 let myTimer;
-   function clock() {
-     myTimer = setInterval(myClock, 1000);
-     let c = 0;
+function clock() {
+  myTimer = setInterval(myClock, 1000);
+  let c = 0;
 
-     function myClock() {
-       document.getElementById("timer").innerHTML = ++c;
-       if (c == 200) {
-         clearInterval(myTimer);
-         alert("Time's Up!");
-       }
-     }
-   }
+  function myClock() {
+    document.getElementById("timer").innerHTML = ++c;
+    if (c == 200) {
+      clearInterval(myTimer);
+      alert("Time's Up!");
+    }
+  }
+}
 
-   
+function tempAlert(msg, duration) {
+  let message = document.createElement("div");
+  message.setAttribute(
+    "style",
+    "position: absolute; top: 60%; left: 40%; background-color: rgba(255, 5, 5, 0.8); border: solid black 1px; font-family: 'Lato', sans-serif; font-size: 50px"
+  );
+  message.innerHTML = msg;
+  setTimeout(function () {
+    message.parentNode.removeChild(message);
+  }, duration);
+  document.body.appendChild(message);
+}
