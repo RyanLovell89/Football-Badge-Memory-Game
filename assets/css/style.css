@@ -5,7 +5,7 @@
 html {
   height: 100%;
   margin: auto;
-  width: 960px;
+  width: 100%;
 }
 
 /* ---------------------- background image */
@@ -87,14 +87,35 @@ button {
     font-family: 'Lato', sans-serif;
 }
 
-/* ------------------------- Game Background */
+/* ------------------------- Game and Side Background */
 
 .gameBackground {
     border: solid black 2px;
     margin: 5px;
     padding: 5px;
     background-color: rgba(241, 241, 241, 0.5);
-    width: auto;
+    width: 960px;
+    float: left;
+}
+
+.column1 {
+  float: left;
+  height: 100%;
+  width: 10%;
+  margin: 5px;
+  padding: 5px;
+  border: solid black 2px;
+  background-color: rgba(241, 241, 241, 0.5);
+}
+
+.column3 {
+  float: right;
+  height: 100%;
+  width: 10%;
+  margin: 5px;
+  padding: 5px;
+  border: solid black 2px;
+  background-color: rgba(241, 241, 241, 0.5);
 }
 
 /* ------------------------- Game  */
