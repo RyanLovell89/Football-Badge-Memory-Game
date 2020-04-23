@@ -1,4 +1,5 @@
 //Badge images storage
+
 const badgeArray = [
   {
     name: "AFC-Bournemouth",
@@ -85,6 +86,7 @@ const badgeArray = [
 ];
 
 //variables for the game
+
 let gameGrid = badgeArray.concat(badgeArray);
 let count = 0;
 let firstGuess = "";
@@ -96,7 +98,7 @@ let badgeDelay = 1000;
 
 gameGrid.sort(() => 0.5 - Math.random());
 
-//Creates the game layout. Makes a div for each badge
+//Creates the game layout
 
 const game = document.getElementById("game");
 const grid = document.createElement("section");
@@ -171,22 +173,6 @@ const resetGuesses = () => {
     badge.classList.remove("selected");
   });
 };
-
-//Timer countdown function with alert if time goes over 200 seconds
-
-let myTimer;
-function clock() {
-  myTimer = setInterval(myClock, 1000);
-  let c = 0;
-
-  function myClock() {
-    document.getElementById("timer").innerHTML = ++c;
-    if (c == 200) {
-      clearInterval(myTimer);
-      alert("Time's Up!");
-    }
-  }
-}
 
 //Shows pop up div letting the player know it's a match
 
