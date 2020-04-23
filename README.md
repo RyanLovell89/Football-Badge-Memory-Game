@@ -1,40 +1,77 @@
 <h1>Football Badge Memory Card Game</h1>
 
-<p>My project is a memory card game. The idea of the game is to match up all 20 premier league club badges.
-   
+<p>My project is a memory card game. The idea of the game is to match up all 20 Premier League club badges. When a match has been made the 
+player will be told with a pop up saying it's a match. The game is over when all the badges have been match together.
 </p>
 
 <h1>UX</h1>
-The website is aimed at anyone who like's football or memory card games.
 
+<p>The website is aimed at any one who likes football or memory card games. The user of this website would be looking to play memory game.
+The game is a 5 by 8 grid with 40 cards showing, there are 20 pairs to make. The use starts by clicking on a Premier League logo, doing so
+will flip the card over revealing a club badge. Next the user will click on another Premier League logo and this will flip over revealing
+another club badge. If the badges are a match then the use will see a pop up saying that they are a match, if not the cards will flip back over.
+The user will repeat this progress till the board is clear. The game is over when the user has matched up all the club badges.
+</p>
 
 Balsamiq Wireframes have been added in a separate directory in pdf format. A few changes were made from the original designs.
 
 <h1>Features</h1>
 
-
+* Home Page - The first and only page avilable on the website. Everything the user needs to know is on this page.
+ There is no need for other pages.
+* Game Description - Game description letting the player know what the game is.
+* How To Play - Lets the player know how the game is played
 
 <h2>Existing Features</h2>
 
+* Memory game - The game has 40 images / 20 pairs of images to match up. The cards flip over when clicked and have a boarder around
+them so the player knows what they have selected. When a match is made the badges disappear and the player will be notified.
+* Pop Up Message - A pop up message appears on the board to let the player know a match has been made. It only appears for one second so
+it doesn't effect the player.
 
 <h2>Features Left to Implement</h2>
+
+* Timer - a timer that would count up in seconds to see how long it takes a player to complete the board. Timer would start on submission
+of the player name and stop when the board is clear.
+* Player Name - a input box where the player can input their name. It would link to the leader board.
+* Leader Board Table - a leader board to pop up on completion of the game, lets the player see how they compered to other players.
 
 <h1>Technologies Used</h1>
 
 * [HTML](https://en.wikipedia.org/wiki/HTML) and [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - 
-  Two of the main programming languages used to create the website.
-* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - The third main programming language used. Mainly use to create the memory game.
+  Two of the main programming languages used to create the website content, layout and styling.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - The third main programming language used. Used to create the memory game.
+* [Google-Fonts](https://fonts.google.com/) Used for headings and paragraphs, took Lato and Roboto also added some font weights.
 * [GitHub](http://github.com) - Used to host the website repository.
-* [ResizeImage](https://resizeimage.net/) - Used to resize the images for premier league logo and the club badges.
+* [GitPages](https://pages.github.com/) - Used to host the live website.
+* [Balsamiq](https://balsamiq.com/) Used to create the wireframes, the desktop version was used.
+* [ResizeImage](https://resizeimage.net/) - Used to resize the images for Premier League logo and the club badges.
+* [Flip-A-Picture](http://flipapicture.com/) - Used to flip the club badges.
+* [W3Schools](https://www.w3schools.com/) -  Used in general for ideas.
 
 <h1>Testing</h1>
 
+* Chrome Developer Tool - Used lots in the design progress of the website to make sure the layout was suitable. Also used to find errors
+wrong with javascript code when testing the game.
+* [HTML-Validator](https://validator.w3.org/) - Used to check the HTML code throughout the creation of the project.
+* [CSS-Validator](https://jigsaw.w3.org/css-validator/) Used to check the CSS code throughtout the creation of the project.
+* [JSHint](https://jshint.com/) - Used to check Javascript code throughtout the creation of the project.
+
+Testing was done by playing the game itself making sure the cards turned over correctly and the correct pairs matched together and disappeared.
+And that pairs that didn't match together turned back over. Also that images were displayed correctly when flipped over.
+
+During testing the images were mirrored at first due to flipping the cards 180degs. This was solved by flipping over the badges, so they were
+mirrored already and when flipped in the game they appeared correctly.
 
 <h1>Deployment</h1>
+
+The project was created on GitPod, so I used GitPages to deploy the website.
 
 <h1>Credits</h1>
 
 <h2>Content</h2>
+
+The description of the game and rules were written by myself. The images came from different sources and are stated where in the media section.
 
 <h1>Media</h1>
 
@@ -62,7 +99,9 @@ Balsamiq Wireframes have been added in a separate directory in pdf format. A few
     * [West-Ham-United](https://en.wikipedia.org/wiki/West_Ham_United_F.C.)
     * [Wolverhampton-Wanderers](https://en.wikipedia.org/wiki/Wolverhampton_Wanderers_F.C.)
 
-<h1>Acknowledgements</h1>
+<h1>Acknowledgments</h1>
 
+I got the inspiration to create this project myself as I am a big fan of football and enjoy playing games, so I decided to bring them both
+together.
 
 <b>This website is solely for educational purposes.</b>
