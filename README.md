@@ -57,8 +57,15 @@ wrong with javascript code when testing the game.
 * [CSS-Validator](https://jigsaw.w3.org/css-validator/) Used to check the CSS code throughtout the creation of the project.
 * [JSHint](https://jshint.com/) - Used to check Javascript code throughtout the creation of the project.
 
-Testing was done by playing the game itself making sure the cards turned over correctly and the correct pairs matched together and disappeared.
-And that pairs that didn't match together turned back over. Also that images were displayed correctly when flipped over.
+Testing was done by playing the game. Making sure the correct function were in place and working ie,
+
+* when the player clicked the Premier League logo it flipped over correctly to reveal a badge.
+* Masking sure the badge paired up with each other correctly and not mismatch with each other.
+* When the player made a match the badges disappeared and the correct message appeared.
+* Masking sure the board was random every time the page was loaded up.
+
+During testing the Bootstrap framework caused problems with the layout of the game grid, it made the Premier League logo and the badges not
+line up. Meaning you could see the badges. This was over some by removing the Bootstrap framework.
 
 During testing the images were mirrored at first due to flipping the cards 180degs. This was solved by flipping over the badges, so they were
 mirrored already and when flipped in the game they appeared correctly.
@@ -66,6 +73,23 @@ mirrored already and when flipped in the game they appeared correctly.
 <h1>Deployment</h1>
 
 The project was created on GitPod, so I used GitPages to deploy the website.
+
+To get to the project visit GitHubRepository from there it can be found using the following steps;
+
+* Click on repositories at the at top of the page.
+* Click on DunnsComicBookShop at the top of repositories page.
+* Click on setting.
+* Scroll down to the section called GitHub Pages.
+* Select the source master branch.
+* Site will then be published at https://ryanlovell89.github.io/Football-Badge-Memory-Game/
+* The repository has also pinned to the top of the overview section, can be accessed from there, then just follow from step 3.
+* The site can also be run locally by creating a clone or download of the repository visit GitHubRepository
+
+* Click on repositories at the at top of the page.
+* Click on Football-Badge-Memory-Game at the top of repositories page.
+* Click Clone or Download.
+
+You can either open in desktop or use the web url https://github.com/RyanLovell89/Football-Badge-Memory-Game
 
 <h1>Credits</h1>
 
