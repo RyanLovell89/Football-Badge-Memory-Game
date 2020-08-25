@@ -93,7 +93,7 @@ h2{
 }
 
 .front {
-    background: url('../../assets/images/Premier-League-Logo1.jpg') no-repeat center center / contain;
+    background: url('../images/Premier-League-Logo1.jpg') no-repeat center center / contain;
 }
 
 .back {
