@@ -3,84 +3,83 @@
 let badgeArray = [
   {
     name: "AFC-Bournemouth",
-    img: "../images/AFC-Bournemouth1.jpg",
+    img: src="../assets/images/AFC-Bournemouth1.jpg",
   },
   {
     name: "Arsenal-FC",
-    img: "../images/Arsenal-FC1.jpg",
+    img: src="../assets/images/Arsenal-FC1.jpg",
   },
   {
     name: "Aston-Villa-FC",
-    img: "../images/Aston-Villa-FC1.jpg",
+    img: src="../assets/images/Aston-Villa-FC1.jpg",
   },
   {
     name: "Brighton-&-Hove-Albion",
-    img: "../images/Brighton-&-Hove-Albion1.jpg",
+    img: src="../assets/images/Brighton-&-Hove-Albion1.jpg",
   },
   {
     name: "Burnley-FC",
-    img: "../images/Burnley-FC1.jpg",
+    img: src="../assets/images/Burnley-FC1.jpg",
   },
   {
     name: "Chelsea-FC",
-    img: "../images/Chelsea-FC1.jpg",
+    img: src="../assets/images/Chelsea-FC1.jpg",
   },
   {
     name: "Crystal-Palace-FC",
-    img: "../images/Crystal-Palace-FC1.jpg",
+    img: src="../assets/images/Crystal-Palace-FC1.jpg",
   },
   {
     name: "Everton-FC1",
-    img: "../images/Everton-FC1.jpg",
+    img: src="../assets/images/Everton-FC1.jpg",
   },
   {
     name: "Leicester-City-FC",
-    img: "../images/Leicester-City-FC1.jpg",
+    img: src="../assets/images/Leicester-City-FC1.jpg",
   },
   {
     name: "Liverpool-FC",
-    img: "../images/Liverpool-FC1.jpg",
+    img: src="../assets/images/Liverpool-FC1.jpg",
   },
   {
     name: "Manchester-City-FC",
-    img: "../images/Manchester-City-FC1.jpg",
+    img: src="../assets/images/Manchester-City-FC1.jpg",
   },
   {
     name: "Manchester-United-FC",
-    img: "../images/Manchester-United-FC1.jpg",
+    img: src="../assets/images/Manchester-United-FC1.jpg",
   },
   {
     name: "Newcastle-United-FC",
-    img: "../images/Newcastle-United-FC1.jpg",
+    img: src="../assets/images/Newcastle-United-FC1.jpg",
   },
   {
     name: "Norwich-City-FC",
-    img: "../images/Norwich-City-FC1.jpg",
+    img: src="../assets/images/Norwich-City-FC1.jpg",
   },
   {
     name: "Sheffield-United-FC",
-    img: "../images/Sheffield-United-FC1.jpg",
+    img: src="../assets/images/Sheffield-United-FC1.jpg",
   },
   {
     name: "Southampton-FC",
-    img: "../images/Southampton-FC1.jpg",
+    img: src="../assets/images/Southampton-FC1.jpg",
   },
   {
     name: "Tottenham-Hotspur-FC",
-    img: "../images/Tottenham-Hotspur-FC1.jpg",
+    img: src="../assets/images/Tottenham-Hotspur-FC1.jpg",
   },
   {
     name: "Watford-FC",
-    img: "../images/Watford-FC1.jpg",
+    img: src="../assets/images/Watford-FC1.jpg",
   },
-
   {
     name: "West-Ham-United-FC",
-    img: "../images/West-Ham-United-FC1.jpg",
+    img: src="../assets/images/West-Ham-United-FC1.jpg",
   },
   {
     name: "Wolverhampton-Wanderers-FC",
-    img: "../images/Wolverhampton-Wanderers-FC1.jpg",
+    img: src="../assets/images/Wolverhampton-Wanderers-FC1.jpg",
   },
 ];
 
