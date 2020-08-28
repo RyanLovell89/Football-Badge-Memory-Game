@@ -2,8 +2,8 @@
 
 let badgeArray = [
   {
-    name: "AFC-Bournemouth",
-    img: src="../assets/images/AFC-Bournemouth1.jpg",
+    name: "Mo Salah",
+    img: "../assets/images/testing.jpg",
   },
   {
     name: "Arsenal-FC",
