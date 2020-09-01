@@ -3,11 +3,11 @@
 let badgeArray = [
   {
     name: "AFC-Bournemouth",
-    img: "url('../assets/images/AFC-Bournemouth1.jpg')",
+    img: "../assets/images/AFC-Bournemouth1.jpg",
   },
   {
     name: "Arsenal-FC",
-    img: "../assets/images/Arsenal-FC1.jpg",
+    img: "../assets/images/arsenal-FC1.jpg",
   },
   {
     name: "Aston-Villa-FC",
