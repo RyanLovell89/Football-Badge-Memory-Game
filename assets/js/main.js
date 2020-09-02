@@ -3,7 +3,7 @@
 let badgeArray = [
   {
        name: "AFC-Bournemouth",
-       img: "../assets/images/AFC-Bournemouth-flip.jpg"
+       img: "assets/images/AFC-Bournemouth-flip.jpg"
   },
 //   {
 //     name: "Arsenal-FC",
